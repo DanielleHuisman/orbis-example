@@ -27,10 +27,10 @@
         "typeorm": "ts-node ./node_modules/.bin/typeorm"
     },
     "dependencies": {
-        "@nexus/schema": "0.14.0",
-        "@orbis-framework/auth": "^0.0.6",
+        "@nexus/schema": "^0.14.0",
+        "@orbis-framework/auth": "^0.1.0",
+        "@orbis-framework/core": "^0.1.0",
         "graphql": "^15.3.0",
-        "orbis-server": "^0.1.15",
         "pg": "^8.3.0",
         "typeorm": "^0.2.25"
     },
