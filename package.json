@@ -1,0 +1,40 @@
+{
+    "name": "orbis-example",
+    "description": "Orbis example project.",
+    "version": "0.0.0",
+    "license": "MIT",
+    "author": "Daniel Huisman <daniel@huisman.me> (https://danielhuisman.io)",
+    "repository": "github:DanielHuisman/orbis-example",
+    "keywords": [
+        "orbis",
+        "example"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "LICENSE.md",
+        "README.md",
+        "package.json"
+    ],
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "yarn run clean && yarn run build:ts",
+        "build:ts": "tsc",
+        "prepublishOnly": "yarn run build",
+        "dev": "ts-node src/index.ts",
+        "start": "node dist/index.js",
+        "typeorm": "ts-node ./node_modules/.bin/typeorm"
+    },
+    "dependencies": {
+        "@nexus/schema": "0.14.0",
+        "@orbis-framework/auth": "^0.0.6",
+        "graphql": "^15.3.0",
+        "orbis-server": "^0.1.15",
+        "pg": "^8.3.0",
+        "typeorm": "^0.2.25"
+    },
+    "devDependencies": {
+        "typescript": "^3.9.7"
+    }
+}
