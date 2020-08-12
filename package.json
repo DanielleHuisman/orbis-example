@@ -27,9 +27,9 @@
         "typeorm": "ts-node ./node_modules/.bin/typeorm"
     },
     "dependencies": {
-        "@nexus/schema": "^0.14.0",
-        "@orbis-framework/auth": "^0.1.0",
-        "@orbis-framework/core": "^0.1.0",
+        "@nexus/schema": "^0.15.0",
+        "@orbis-framework/auth": "^0.1.1",
+        "@orbis-framework/core": "^0.1.1",
         "graphql": "^15.3.0",
         "pg": "^8.3.0",
         "typeorm": "^0.2.25"
@@ -38,6 +38,7 @@
         "dotenv-cli": "^3.2.0",
         "nodemon": "^2.0.4",
         "rimraf": "^3.0.2",
+        "ts-node": "^8.10.2",
         "typescript": "^3.9.7"
     }
 }

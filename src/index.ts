@@ -1,7 +1,11 @@
-import {Orbis} from '@orbis-framework/core';
 import {auth} from '@orbis-framework/auth';
 
-const orbis = new Orbis();
+import {orbis} from './orbis';
+import './entities';
 
 console.log(orbis);
 console.log(auth);
+
+orbis.merge(auth);
+
+console.log(orbis);
