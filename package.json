@@ -28,8 +28,8 @@
     },
     "dependencies": {
         "@nexus/schema": "^0.15.0",
-        "@orbis-framework/auth": "^0.1.1",
-        "@orbis-framework/core": "^0.1.1",
+        "@orbis-framework/auth": "^0.1.2",
+        "@orbis-framework/core": "^0.1.2",
         "graphql": "^15.3.0",
         "pg": "^8.3.0",
         "typeorm": "^0.2.25"

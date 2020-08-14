@@ -17,15 +17,15 @@
     iterall "^1.2.2"
     tslib "^1.9.3"
 
-"@orbis-framework/auth@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@orbis-framework/auth/-/auth-0.1.1.tgz#2206535a4d0eec5ba624b4fd78c3473b3f1ae5ae"
-  integrity sha512-NdhPw+Jhtr0+F3DlrcdlHlDzTT4kH7YqL22CPZi2QxA0CNLatEk7mEfY1nRwbzJjHJsOWBI9MetM79AG4HgmIQ==
+"@orbis-framework/auth@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@orbis-framework/auth/-/auth-0.1.2.tgz#a71db256fedbe4309b324d3beaabd74448d8ae8a"
+  integrity sha512-fjEAA5WRBBRRSlK4PTHFKPOrx3avhGjOaqze7GkPPm4/hwaFYyjcjpT0CeRVvvd3kA8xrqPv9okm4ZShEEilAg==
 
-"@orbis-framework/core@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@orbis-framework/core/-/core-0.1.1.tgz#524f626b0f100eee5519e7ce221aea88c7300ddd"
-  integrity sha512-nb7C26NIWivPWE1UUWurFIW94bcOjq6Wc21Y0ei8tW8uHM0SXZBW9rwJXhupzQH2gp4UbDKA3awZGgpvtCCGxg==
+"@orbis-framework/core@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@orbis-framework/core/-/core-0.1.2.tgz#30be174962f5825ef5aa44e25ade962d4297eb91"
+  integrity sha512-4uqTI/G0US3JJcnX0/BOYA2toyQP9yRwqtxNq4+RTkDlzQ4MlQn0zskQ1VIa9aGfNSvQ9TrVanL7QZPGAlcfEw==
   dependencies:
     "@types/graphql-iso-date" "^3.3.3"
     "@types/node" "^13.13.4"
@@ -815,9 +815,9 @@ lodash-es@^4.17.11:
   integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
 
 lodash@^4.17.15:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
