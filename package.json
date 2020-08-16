@@ -27,9 +27,12 @@
         "typeorm": "ts-node ./node_modules/.bin/typeorm"
     },
     "dependencies": {
+        "@danielhuisman/koa-base": "^1.0.8",
         "@nexus/schema": "^0.15.0",
-        "@orbis-framework/auth": "^0.1.2",
-        "@orbis-framework/core": "^0.1.2",
+        "@orbis-framework/auth": "^0.1.5",
+        "@orbis-framework/core": "^0.1.5",
+        "apollo-server-koa": "^2.16.1",
+        "cuid": "^2.1.8",
         "graphql": "^15.3.0",
         "pg": "^8.3.0",
         "typeorm": "^0.2.25"

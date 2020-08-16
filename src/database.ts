@@ -2,7 +2,7 @@ import {getConnectionManager} from 'typeorm';
 
 import {config} from './config';
 
-export default getConnectionManager().create({
+export const database = getConnectionManager().create({
     type: 'postgres',
     host: config.database.host,
     port: config.database.port,
