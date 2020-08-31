@@ -1,6 +1,7 @@
 import {createServer} from '@danielhuisman/koa-base';
 import {ApolloServer} from 'apollo-server-koa';
 
+import {initializeAuthentication} from './authentication';
 import {config} from './config';
 import {context} from './context';
 import {User} from './entities';
@@ -10,7 +11,11 @@ export interface State {
     user?: User;
 }
 
+// Create server and application
 const {server, app} = createServer<State>(config);
+
+// Initialize authentication middleware
+initializeAuthentication(app);
 
 // Define CORS origins
 const origins = [
