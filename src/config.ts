@@ -19,5 +19,12 @@ export const config = {
         username: process.env.DATABASE_USERNAME || 'example',
         password: process.env.DATABASE_PASSWORD || 'password',
         name: process.env.DATABASE_NAME || 'example'
+    },
+
+    oauth: {
+        google: {
+            clientId: process.env.GOOGLE_CLIENT_ID || 'googleClientId',
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET || 'googleClientSecret'
+        }
     }
 };

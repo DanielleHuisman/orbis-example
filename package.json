@@ -29,7 +29,7 @@
     "dependencies": {
         "@danielhuisman/koa-base": "^1.0.8",
         "@nexus/schema": "^0.15.0",
-        "@orbis-framework/auth": "^0.1.9",
+        "@orbis-framework/auth": "^0.1.14",
         "@orbis-framework/core": "^0.1.7",
         "@types/koa-passport": "^4.0.2",
         "@types/passport-jwt": "^3.0.3",
