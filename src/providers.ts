@@ -17,13 +17,9 @@ export const providers = [
         },
 
         createUser({provider, data}) {
-            const localData = data as {
-                name: string;
-            };
-
             return orbis.createOne(User, {
                 data: {
-                    name: localData.name,
+                    name: data.name,
                     email: provider.email
                 }
             });
