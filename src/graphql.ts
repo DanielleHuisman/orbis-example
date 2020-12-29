@@ -1,4 +1,4 @@
-import {makeSchema} from '@nexus/schema';
+import {makeSchema} from 'nexus';
 import {orbisPlugin} from '@orbis-framework/core';
 import cuid from 'cuid';
 

@@ -1,6 +1,6 @@
 import {getConnectionManager} from 'typeorm';
 
-import {config} from './config';
+import {config, isDevelopment} from './config';
 
 export const database = getConnectionManager().create({
     type: 'postgres',
@@ -21,5 +21,5 @@ export const database = getConnectionManager().create({
     subscribers: [
         __dirname + '/subscribers/**/*.{js,ts}'
     ],
-    logging: process.env.NODE_ENV === 'development' ? ['query', 'error'] : ['error']
+    logging: isDevelopment ? ['query', 'error'] : ['error']
 });

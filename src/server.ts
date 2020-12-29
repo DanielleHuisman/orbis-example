@@ -2,7 +2,7 @@ import {createServer} from '@danielhuisman/koa-base';
 import {ApolloServer} from 'apollo-server-koa';
 
 import {initializeAuthentication} from './authentication';
-import {config} from './config';
+import {config, isDevelopment} from './config';
 import {context} from './context';
 import {User} from './entities';
 import {schema} from './graphql';
@@ -26,7 +26,7 @@ const origins = [
 // Initialize Apollo GraphQL server
 const apollo = new ApolloServer({
     schema,
-    tracing: process.env.NODE_ENV === 'development',
+    tracing: isDevelopment,
     subscriptions: {},
     context
 });

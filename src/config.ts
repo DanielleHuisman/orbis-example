@@ -1,3 +1,7 @@
+import {HelmetOptions} from '@danielhuisman/koa-base';
+
+export const isDevelopment = process.env.NODE_ENV === 'development';
+
 export const config = {
     port: parseInt(process.env.PORT || '', 10) || 5000,
     externalUrl: process.env.EXTERNAL_URL || 'http://localhost:5000',
@@ -12,6 +16,10 @@ export const config = {
         audience: process.env.JWT_AUDIENCE || 'example.local',
         expiresIn: 24 * 60 * 60
     },
+
+    helmet: {
+        contentSecurityPolicy: isDevelopment ? false : undefined
+    } as HelmetOptions,
 
     database: {
         host: process.env.DATABASE_HOST || 'localhost',
