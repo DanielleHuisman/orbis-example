@@ -42,6 +42,10 @@ export const providers = [
         ...config.oauth.google,
 
         createUser({provider, data}) {
+            if (!data.name) {
+                throw new Error('User has no name.');
+            }
+
             return orbis.createOne(User, {
                 data: {
                     name: data.name,

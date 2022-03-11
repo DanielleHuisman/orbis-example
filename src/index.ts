@@ -15,7 +15,7 @@ import {server} from './server';
         logger.info('Succesfully initialized database connection.');
     } catch (err) {
         logger.error('Failed to initialize database connection:');
-        logger.error(err.stack);
+        logger.error((err as Error).stack);
     }
 
     // Start server
@@ -23,7 +23,7 @@ import {server} from './server';
         await startServer(config, server);
     } catch (err) {
         logger.error('Failed to start server:');
-        logger.error(err.message);
+        logger.error((err as Error).stack);
     }
     logger.info(`Started WebSocket server on ws://localhost:${config.port}`);
 
