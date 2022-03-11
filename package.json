@@ -42,7 +42,7 @@
         "typeorm": "^0.2.29"
     },
     "devDependencies": {
-        "dotenv-cli": "4.0.0",
+        "dotenv-cli": "5.0.0",
         "nodemon": "2.0.15",
         "rimraf": "3.0.2",
         "ts-node": "9.1.1",
