@@ -53,7 +53,7 @@
     },
     "resolutions": {
         "graphql": "^15.8.0",
-        "apollo-server-koa/apollo-server-core": "2.20.0",
+        "apollo-server-koa/apollo-server-core": "2.25.3",
         "apollo-server-core/graphql-upload": "^13.0.0"
     }
 }
