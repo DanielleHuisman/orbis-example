@@ -23,6 +23,7 @@
         "build:ts": "tsc",
         "prepublishOnly": "yarn run build",
         "dev": "dotenv -- nodemon -e ts -x ts-node src/index.ts",
+        "debug": "dotenv -- node --inspect --inspect-brk -r ts-node/register src/index.ts",
         "start": "dotenv -- node dist/index.js",
         "typeorm": "ts-node ./node_modules/.bin/typeorm"
     },
