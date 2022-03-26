@@ -8,22 +8,22 @@ import {User} from './entities';
 // Rules
 const isUser = rule()((_root, _args, ctx: Context) => !!ctx.user);
 
-const isCurrentMember = rule()((root, _args, ctx: Context) => !!ctx.user && (root instanceof User && root.id === ctx.user.id));
+const isCurrentUser = rule()((root, _args, ctx: Context) => !!ctx.user && (root instanceof User && root.id === ctx.user.id));
 
-const isCurrentMemberProvider = rule()(async (root, _args, ctx: Context) =>
+const isCurrentUserProvider = rule()(async (root, _args, ctx: Context) =>
     !!ctx.user && (root instanceof Provider && (await ctx.user.providers).some((provider) => provider.id === root.id))
 );
 
 // Permissions
 export const permissions = shield({
     AccessToken: allow,
-    Member: {
-        '*': isCurrentMember,
+    Provider: isCurrentUserProvider,
+    ProviderList: isUser,
+    User: {
+        '*': isCurrentUser,
         id: isUser,
         name: isUser
     },
-    Provider: isCurrentMemberProvider,
-    ProviderList: isUser,
 
     Query: {
         me: isUser,

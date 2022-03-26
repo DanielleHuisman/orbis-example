@@ -5,10 +5,12 @@ import {makeSchema} from 'nexus';
 
 import {orbis} from './orbis';
 import {permissions} from './permissions';
+import * as types from './types';
 
 export const schema = applyMiddleware(
+    // @ts-ignore: typing conflict
     makeSchema({
-        types: {},
+        types,
         plugins: [
             orbisPlugin({
                 orbis,
@@ -17,7 +19,9 @@ export const schema = applyMiddleware(
                 }
             })
         ],
-        shouldGenerateArtifacts: false
+        outputs: {
+            typegen: true
+        }
     }),
     permissions
 );
