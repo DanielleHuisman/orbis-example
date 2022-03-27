@@ -262,17 +262,17 @@
   dependencies:
     make-plural "^7.0.0"
 
-"@orbis-framework/auth@^0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@orbis-framework/auth/-/auth-0.2.7.tgz#250aec1124f4f9cf7b3d6e8d5cdd60ddf73964a9"
-  integrity sha512-RDQXhP2qkT0a+aKI7uZZBGwc5jrY692kcNMTHz6Uo2S3zNBOhuYwLqTXX7LoiKQV8Sw9stsLyWxf0G7VWyWgsA==
+"@orbis-framework/auth@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@orbis-framework/auth/-/auth-0.3.0.tgz#3df4ae959bc24ea10a297243e2e3d6ccdadcb48a"
+  integrity sha512-kPWsidI9YgW257DW4pze/04rEwS9DmIYISGFQZmxX4IBUQ89kvQcnvBUWt1XKD4qhHeRo2OspPHL1MJ59bwqqQ==
   dependencies:
     "@types/bcrypt" "^5.0.0"
     "@types/jsonwebtoken" "^8.5.8"
     "@types/randomstring" "^1.1.8"
     bcrypt "^5.0.1"
-    google-auth-library "^7.14.0"
-    googleapis "96.0.0"
+    google-auth-library "^7.14.1"
+    googleapis "^99.0.0"
     jsonwebtoken "^8.5.1"
     moment "^2.29.1"
     randomstring "^1.2.2"
@@ -2167,6 +2167,21 @@ google-auth-library@^7.0.2, google-auth-library@^7.14.0:
     jws "^4.0.0"
     lru-cache "^6.0.0"
 
+google-auth-library@^7.14.1:
+  version "7.14.1"
+  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-7.14.1.tgz#e3483034162f24cc71b95c8a55a210008826213c"
+  integrity sha512-5Rk7iLNDFhFeBYc3s8l1CqzbEBcdhwR193RlD4vSNFajIcINKI8W8P0JLmBpwymHqqWbX34pJDQu39cSy/6RsA==
+  dependencies:
+    arrify "^2.0.0"
+    base64-js "^1.3.0"
+    ecdsa-sig-formatter "^1.0.11"
+    fast-text-encoding "^1.0.0"
+    gaxios "^4.0.0"
+    gcp-metadata "^4.2.0"
+    gtoken "^5.0.4"
+    jws "^4.0.0"
+    lru-cache "^6.0.0"
+
 google-p12-pem@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/google-p12-pem/-/google-p12-pem-3.0.3.tgz#673ac3a75d3903a87f05878f3c75e06fc151669e"
@@ -2186,10 +2201,10 @@ googleapis-common@^5.0.2:
     url-template "^2.0.8"
     uuid "^8.0.0"
 
-googleapis@96.0.0:
-  version "96.0.0"
-  resolved "https://registry.yarnpkg.com/googleapis/-/googleapis-96.0.0.tgz#95bdf0e57bc912581ba7bc10eb202301f2b05dc1"
-  integrity sha512-tEQtcukxA4sW1OXh35teJbui+BIjMTghH6i0tvUctyXgMDO0Upu3+hrytrw9JqZJxtXReM3Wr5+g4U7veqHpBQ==
+googleapis@^99.0.0:
+  version "99.0.0"
+  resolved "https://registry.yarnpkg.com/googleapis/-/googleapis-99.0.0.tgz#cd0449810c9139c23bee213747932984fca837c2"
+  integrity sha512-ZS+iFrNvvZykpGBgTgaj0FgmKCZnC+0tmbs8b5+vJnVcaaHMp8IPUWruNSFqZjg6M8Yey8/aJxhT5mT5Ja2+VQ==
   dependencies:
     google-auth-library "^7.0.2"
     googleapis-common "^5.0.2"
