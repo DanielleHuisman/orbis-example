@@ -29,9 +29,9 @@
     },
     "dependencies": {
         "@danielhuisman/koa-base": "^1.1.1",
-        "@orbis-framework/auth": "^0.2.7",
-        "@orbis-framework/core": "^0.2.7",
-        "@orbis-framework/email": "^0.2.7",
+        "@orbis-framework/auth": "^0.3.0",
+        "@orbis-framework/core": "^0.3.0",
+        "@orbis-framework/email": "^0.3.0",
         "@types/koa-passport": "^4.0.3",
         "@types/passport-jwt": "^3.0.6",
         "apollo-server-koa": "2.20.0",
