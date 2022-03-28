@@ -1,8 +1,10 @@
-import {getConnectionManager} from 'typeorm';
+import {DataSource} from 'typeorm';
+import * as authEntities from '@orbis-framework/auth/dist/entities';
 
 import {config, isDevelopment} from './config';
+import * as entities from './entities';
 
-export const database = getConnectionManager().create({
+export const database = new DataSource({
     type: 'postgres',
     host: config.database.host,
     port: config.database.port,
@@ -12,14 +14,15 @@ export const database = getConnectionManager().create({
     synchronize: false,
     migrationsRun: false,
     entities: [
-        'node_modules/@orbis-framework/auth/dist/entities/*.js',
-        __dirname + '/entities/**/*.{js,ts}'
+        // TODO: improve oribs entity import (including enum handling)
+       ...Object.values(authEntities),
+       ...Object.values(entities)
     ],
     migrations: [
-        __dirname + '/migrations/**/*.{js,ts}'
+        // TODO: write util functions in orbis for migration imports
     ],
     subscribers: [
-        __dirname + '/subscribers/**/*.{js,ts}'
+        // TODO: add a subscriber
     ],
     logging: isDevelopment ? ['query', 'error'] : ['error']
 });

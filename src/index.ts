@@ -11,7 +11,7 @@ import {server} from './server';
 
         // Initialize database
         logger.info('Initializing database connection...');
-        await database.connect();
+        await database.initialize();
         logger.info('Succesfully initialized database connection.');
     } catch (err) {
         logger.error('Failed to initialize database connection:');
