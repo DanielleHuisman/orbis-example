@@ -1,13 +1,12 @@
 import {Orbis} from '@orbis-framework/core';
 import {OrbisAuth} from '@orbis-framework/auth';
-import {getConnection} from 'typeorm';
 
 import {config} from './config';
+import {dataSource} from './database';
 import {providers} from './providers';
 
 export const orbis = new Orbis({
-    // Only required when using linked dependencies
-    connection: getConnection()
+    dataSource
 });
 
 orbis.addModules([

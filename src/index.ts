@@ -2,7 +2,7 @@ import 'reflect-metadata';
 import {startServer, logger} from '@danielhuisman/koa-base';
 
 import {config} from './config';
-import {database} from './database';
+import {dataSource} from './database';
 import {server} from './server';
 
 (async () => {
@@ -11,7 +11,7 @@ import {server} from './server';
 
         // Initialize database
         logger.info('Initializing database connection...');
-        await database.initialize();
+        await dataSource.initialize();
         logger.info('Succesfully initialized database connection.');
     } catch (err) {
         logger.error('Failed to initialize database connection:');
