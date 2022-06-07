@@ -20,6 +20,7 @@ import {server} from './server';
 
     // Start server
     try {
+        // @ts-expect-error: conflict in Helmet options
         await startServer(config, server);
     } catch (err) {
         logger.error('Failed to start server:');

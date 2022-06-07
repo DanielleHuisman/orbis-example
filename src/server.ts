@@ -12,6 +12,7 @@ export interface State {
 }
 
 // Create server and application
+// @ts-expect-error: conflict in Helmet options
 const {server, app} = createServer<State>(config);
 
 // Initialize authentication middleware

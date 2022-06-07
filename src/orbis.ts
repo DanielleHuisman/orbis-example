@@ -6,7 +6,7 @@ import {dataSource} from './database';
 import {providers} from './providers';
 
 export const orbis = new Orbis({
-    dataSource
+    dataSource: () => dataSource
 });
 
 orbis.addModules([

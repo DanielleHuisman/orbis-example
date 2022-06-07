@@ -1,5 +1,3 @@
-import {HelmetOptions} from '@danielhuisman/koa-base';
-
 export const isDevelopment = process.env.NODE_ENV === 'development';
 
 export const config = {
@@ -19,7 +17,7 @@ export const config = {
 
     helmet: {
         contentSecurityPolicy: isDevelopment ? false : undefined
-    } as HelmetOptions,
+    },
 
     database: {
         host: process.env.DATABASE_HOST || 'localhost',
