@@ -2,11 +2,11 @@ import {Orbis} from '@orbis-framework/core';
 import {OrbisAuth} from '@orbis-framework/auth';
 
 import {config} from './config';
-import {dataSource} from './database';
+import {getDataSource} from './database';
 import {providers} from './providers';
 
 export const orbis = new Orbis({
-    dataSource: () => dataSource
+    dataSource: () => getDataSource()
 });
 
 orbis.addModules([
