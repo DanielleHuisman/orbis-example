@@ -1,4 +1,4 @@
-import {logger} from '@danielhuisman/koa-base';
+import {logger} from '@daniellehuisman/koa-base';
 import {Provider} from '@orbis-framework/auth';
 import {shield, rule, allow} from 'graphql-shield';
 

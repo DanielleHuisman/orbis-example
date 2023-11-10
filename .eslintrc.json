@@ -1,0 +1,63 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "google",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "comma-dangle": ["error", "never"],
+        "indent": "off",
+        "max-len": ["error", 160],
+        "new-cap": "off",
+        "no-invalid-this": "off",
+        "no-warning-comments": "warn",
+        "padded-blocks": "off",
+        "quote-props": ["error", "as-needed"],
+        "require-jsdoc": "off",
+        "semi": "off",
+
+        "import/no-default-export": "error",
+        "import/order": ["warn", {
+            "newlines-between": "always"
+        }],
+        "import/no-unresolved": "off",
+
+        "@typescript-eslint/ban-ts-comment": ["error", {
+            "ts-ignore": "allow-with-description"
+        }],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/indent": ["error", 4, {
+            "SwitchCase": 1,
+            "ignoredNodes": [
+                "ClassBody.body > PropertyDefinition[decorators.length > 0] > .key"
+            ]
+        }],
+        "@typescript-eslint/member-delimiter-style": ["error", {
+            "multiline": {
+                "delimiter": "semi",
+                "requireLast": true
+            },
+            "singleline": {
+                "delimiter": "semi",
+                "requireLast": false
+            }
+        }],
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-unused-vars": ["warn", {
+            "argsIgnorePattern": "^_"
+        }],
+        "@typescript-eslint/semi": ["error"],
+
+
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off"
+    },
+    "ignorePatterns": ["src/migrations/*"]
+}

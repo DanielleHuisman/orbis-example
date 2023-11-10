@@ -11,7 +11,7 @@ export interface ExtendedRegisterInput {
 export const providers = [
     new ProviderLocal<ExtendedRegisterInput>({
         extendRegisterInput(t) {
-            t.nonNull.string('name')
+            t.nonNull.string('name');
         },
 
         createUser({provider, data}) {

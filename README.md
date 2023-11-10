@@ -1,3 +1,3 @@
 # Orbis Example
 
-[Orbis](https://github.com/DanielHuisman/orbis) example project.
+[Orbis](https://github.com/DanielleHuisman/orbis) example project.

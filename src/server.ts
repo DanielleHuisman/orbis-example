@@ -1,4 +1,4 @@
-import {createServer} from '@danielhuisman/koa-base';
+import {createServer} from '@daniellehuisman/koa-base';
 import {ApolloServer} from 'apollo-server-koa';
 
 import {initializeAuthentication} from './authentication';
@@ -35,7 +35,7 @@ const apollo = new ApolloServer({
 // Add Apollo GraphQL middleware
 apollo.applyMiddleware({
     // TODO: figure out why Koa app context errors here
-    // @ts-ignore
+    // @ts-expect-error: Context types don't match
     app,
     path: '/graphql',
     cors: {
